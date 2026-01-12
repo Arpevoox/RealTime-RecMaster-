@@ -4,6 +4,10 @@ RealTime-RecMaster: 万亿级实时推荐系统全链路原型
 ![alt text](https://img.shields.io/badge/python-3.9+-blue.svg)
 
 ![alt text](https://img.shields.io/badge/Flink-1.15+-orange.svg)
+
+
+
+
 项目简介： 本项目是一个支持“千人千面”且具备秒级模型更新能力的超大规模在线学习推荐系统原型，完整覆盖了从实时特征工程、GNN 向量召回、多目标精排到在线学习闭环的全链路架构。
 🚀 技术护城河 (Technical Highlights)
 ⚡ 极速实时性 (Real-time Efficiency)：基于 Apache Flink 构建流式特征计算管道，实现用户行为到特征入库的秒级延迟，配合 Online Learning 闭环，使模型能瞬间捕捉用户兴趣漂移。
@@ -34,6 +38,8 @@ graph TD
     style T fill:#bbf,stroke:#333
     style R fill:#dfd,stroke:#333
     style M fill:#dfd,stroke:#333
+
+
 🛠 技术栈 (Tech Stack)
 模块	技术选型	说明
 消息队列	Kafka	高吞吐实时数据流传输
@@ -75,9 +81,19 @@ code
 Bash
 python online_learning/sample_joiner.py
 python online_learning/online_trainer.py
+
+
+
+
 📊 性能表现 (Benchmarks)
 端到端延迟 (P99): < 150ms (包含召回与精排)
 特征更新延迟: < 2s
 模型热更新频率: 每 100 样本/次
+
+
+
+
+
+
 Maintainer: [你的名字/GitHub ID]
 License: MIT License. 欢迎提交 Issue 和 PR！
